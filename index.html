@@ -3,7 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NMS-Portfolio :: Network Operations Center</title>
+    <title>Félis VIRAMA - Administrateur Système et Réseau | Portfolio NOC</title>
+    <meta name="description" content="Portfolio interactif de Félis VIRAMA, Administrateur Système et Réseau spécialisé en infrastructure, cloud, DevOps et monitoring. Expert en solutions haute-disponibilité.">
+    <meta name="keywords" content="Administrateur Système, Réseau, DevOps, Cloud, Infrastructure, Monitoring, Linux, Windows Server, Kubernetes, Docker">
+    <meta name="author" content="Félis VIRAMA">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-domaine.com/">
+    <meta property="og:title" content="Félis VIRAMA - Admin Sys & Réseaux Dashboard">
+    <meta property="og:description" content="Portfolio interactif style NOC Monitor. Admin Système, DevOps et Infrastructure. 5+ années d'expérience en infrastructure IT et cloud computing.">
+    <meta property="og:image" content="https://votre-domaine.com/preview.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio Félis VIRAMA">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://votre-domaine.com/">
+    <meta name="twitter:title" content="Félis VIRAMA - Admin Sys & Réseaux Dashboard">
+    <meta name="twitter:description" content="Portfolio interactif style NOC Monitor. Admin Système, DevOps et Infrastructure.">
+    <meta name="twitter:image" content="https://votre-domaine.com/preview.png">
+
+    <!-- LinkedIn -->
+    <meta property="og:see_also" content="https://re.linkedin.com/in/félis-virama-319714226">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +35,13 @@
 <body>
     <!-- Effet Scanlines -->
     <div class="scanlines"></div>
+
+    <!-- Bouton Menu Burger (Mobile) -->
+    <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
 
     <!-- Sidebar Navigation -->
     <aside class="sidebar">
@@ -59,6 +89,9 @@
         </div>
     </aside>
 
+    <!-- Overlay pour le menu mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
     <!-- Main Content Area -->
     <div class="main-container">
         <!-- Header -->
@@ -73,6 +106,9 @@
                 </div>
             </div>
             <div class="header-right">
+                <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle high contrast mode" title="Activer/désactiver le mode haute contraste">
+                    <span class="theme-icon">◐</span>
+                </button>
                 <div class="live-clock" id="liveClock">00:00:00</div>
             </div>
         </header>
@@ -268,56 +304,56 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="trigger-row" data-type="alternance" data-trigger="1">
+                            <tr class="trigger-row" data-type="alternance" data-trigger="1" tabindex="0" role="button" aria-label="Voir les détails de l'alternance chez Saas Partner">
                                 <td><span class="exp-type-badge alternance">ALTERNANCE</span></td>
                                 <td class="mono">Sept 2024 - Aujourd'hui</td>
                                 <td><strong>Saas Partner</strong><br><small>Administrateur Système et Réseau</small></td>
                                 <td>Administration IT</td>
                                 <td><span class="status-badge orange">EN COURS</span></td>
                             </tr>
-                            <tr class="trigger-row" data-type="stage" data-trigger="2">
+                            <tr class="trigger-row" data-type="stage" data-trigger="2" tabindex="0" role="button" aria-label="Voir les détails du stage chez Office de l'eau Réunion">
                                 <td><span class="exp-type-badge stage">STAGE</span></td>
                                 <td class="mono">Janvier - Février 2024</td>
                                 <td><strong>Office de l'eau Réunion</strong><br><small>Stagiaire Administrateur Système et Réseau</small></td>
                                 <td>Serveur de développement</td>
                                 <td><span class="status-badge green">TERMINÉ</span></td>
                             </tr>
-                            <tr class="trigger-row" data-type="stage" data-trigger="6">
+                            <tr class="trigger-row" data-type="stage" data-trigger="6" tabindex="0" role="button" aria-label="Voir les détails du stage chez Infobam OI">
                                 <td><span class="exp-type-badge stage">STAGE</span></td>
                                 <td class="mono">Juin - Juillet 2023</td>
                                 <td><strong>Infobam OI</strong><br><small>Stagiaire Administrateur Système et Réseau</small></td>
                                 <td>Support IT et Audit</td>
                                 <td><span class="status-badge green">TERMINÉ</span></td>
                             </tr>
-                            <tr class="trigger-row" data-type="stage" data-trigger="8">
+                            <tr class="trigger-row" data-type="stage" data-trigger="8" tabindex="0" role="button" aria-label="Voir les détails du stage chez WattElek">
                                 <td><span class="exp-type-badge stage">STAGE</span></td>
                                 <td class="mono">Mars 2022</td>
                                 <td><strong>WattElek</strong><br><small>Stagiaire Administrateur Système et Réseau</small></td>
                                 <td>Électricité du bâtiment</td>
                                 <td><span class="status-badge green">TERMINÉ</span></td>
                             </tr>
-                            <tr class="trigger-row" data-type="stage" data-trigger="3">
+                            <tr class="trigger-row" data-type="stage" data-trigger="3" tabindex="0" role="button" aria-label="Voir les détails du stage chez Vindemia Services">
                                 <td><span class="exp-type-badge stage">STAGE</span></td>
                                 <td class="mono">Avril & Septembre 2021</td>
                                 <td><strong>Vindemia Services</strong><br><small>Consultant Infrastructure</small></td>
                                 <td>Support IT et Maintenance</td>
                                 <td><span class="status-badge green">TERMINÉ</span></td>
                             </tr>
-                            <tr class="trigger-row" data-type="stage" data-trigger="8">
+                            <tr class="trigger-row" data-type="stage" data-trigger="8" tabindex="0" role="button" aria-label="Voir les détails du stage chez WattElek">
                                 <td><span class="exp-type-badge stage">STAGE</span></td>
                                 <td class="mono">Décembre 2020</td>
                                 <td><strong>WattElek</strong><br><small>Stagiaire Administrateur Système et Réseau</small></td>
                                 <td>Électricité du bâtiment</td>
                                 <td><span class="status-badge green">TERMINÉ</span></td>
                             </tr>
-                            <tr class="trigger-row" data-type="stage" data-trigger="4">
+                            <tr class="trigger-row" data-type="stage" data-trigger="4" tabindex="0" role="button" aria-label="Voir les détails du stage chez Zot Informatik">
                                 <td><span class="exp-type-badge stage">STAGE</span></td>
                                 <td class="mono">Décembre 2019</td>
                                 <td><strong>Zot Informatik</strong><br><small>Consultant Cybersécurité</small></td>
                                 <td>Maintenance et S.A.V</td>
                                 <td><span class="status-badge green">TERMINÉ</span></td>
                             </tr>
-                            <tr class="trigger-row" data-type="stage" data-trigger="5">
+                            <tr class="trigger-row" data-type="stage" data-trigger="5" tabindex="0" role="button" aria-label="Voir les détails du stage chez SOS Technique Informatique">
                                 <td><span class="exp-type-badge stage">STAGE</span></td>
                                 <td class="mono">Mars 2018</td>
                                 <td><strong>SOS Technique Informatique</strong><br><small>Portfolio Developer</small></td>
@@ -784,6 +820,11 @@
                         <div class="log-line info">[INFO] 2025-11-05 10:00:05 :: monitoring_engine: starting live data stream</div>
                         <div class="log-line info">[INFO] 2025-11-05 10:00:06 :: dashboard: rendering widgets...</div>
                         <div class="log-line success">[SUCCESS] 2025-11-05 10:00:07 :: dashboard: ready</div>
+                        <div class="log-line success">[SUCCESS] Terminal interactif activé. Tapez 'help' pour voir les commandes disponibles.</div>
+                    </div>
+                    <div class="terminal-input-container">
+                        <span class="terminal-prompt">root@portfolio:~$</span>
+                        <input type="text" id="terminalInput" class="terminal-input" autocomplete="off" spellcheck="false" placeholder="Tapez une commande...">
                     </div>
                 </div>
             </section>
@@ -909,7 +950,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.4/dist/gsap.min.js"></script>
-    <!-- Script principal -->
-    <script src="script.js"></script>
+    <!-- Script principal (ES6 Module) -->
+    <script type="module" src="script.js"></script>
 </body>
 </html>
